@@ -51,11 +51,11 @@ const HeroSection = () => {
           <div className="relative flex justify-center">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/30 rounded-full blur-[60px] scale-90" />
-              <img
+              {/* <img
                 src={storyOwl}
                 alt="Friendly owl storyteller"
                 className="relative z-10 w-80 h-80 md:w-96 md:h-96 object-contain float-animation"
-              />
+              /> */}
               {/* Floating stars around the character */}
               <Star className="absolute top-10 right-0 w-8 h-8 text-accent fill-accent star-twinkle" />
               <Star className="absolute bottom-20 left-0 w-6 h-6 text-accent fill-accent star-twinkle" style={{ animationDelay: "0.5s" }} />

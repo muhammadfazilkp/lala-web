@@ -1,6 +1,7 @@
 import { Star, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import logo from "@/assets/LALA logo- PNG.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,10 +11,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1">
-            <span className="text-2xl font-display font-bold text-primary">LALA</span>
-            <Star className="w-4 h-4 text-accent fill-accent" />
+            <img
+              src={logo}
+              className="w-18 h-12 object-contain"
+            />
           </div>
-          <span className="text-sm text-muted-foreground font-body">Stories</span>
+
         </div>
 
         {/* Desktop Navigation */}
